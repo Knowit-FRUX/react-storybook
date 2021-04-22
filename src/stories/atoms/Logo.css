@@ -1,0 +1,36 @@
+@import '../../general.css';
+
+.a-logo {
+  display: inline-block;
+  vertical-align: top;
+  background-color: var(--logo-primary-color);
+  color: white;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 3px;
+  border: 1px solid var(--logo-primary-color);
+  box-sizing: border-box;
+}
+
+.a-logo.is-medium {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 30px;
+}
+
+.a-logo.is-large {
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  font-size: 50px;
+}
+
+.a-logo.is-secondary {
+  background-color: white;
+  color: var(--logo-primary-color);
+}

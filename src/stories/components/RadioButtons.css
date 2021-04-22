@@ -1,0 +1,17 @@
+@import '../../general.css';
+
+.c-radio-button {
+  border: 0;
+}
+
+.c-radio-button legend {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.c-radio-button legend:after {
+  content: ':';
+}
+
+.c-radio-button .a-radio-button {
+  margin-right: 10px;
+}

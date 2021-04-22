@@ -1,0 +1,16 @@
+:root {
+  --logo-primary-color: cadetblue;
+  --primary-color: #1ea7fd;
+  --primary-hover-color: #0075ff;
+  --secondary-color: #333;
+  --disabled-color: #8d8c8c;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --text-color: rgb(42, 42, 42);
+  --header-color: rgb(0, 0, 0);
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  color: var(--text-color);
+}

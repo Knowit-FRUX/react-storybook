@@ -1,0 +1,61 @@
+@import '../../general.css';
+
+.a-radio-button {
+  display: table;
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;  
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1;
+  letter-spacing: 0.5px;
+  vertical-align: middle;
+}
+
+.a-radio-button .actual-radio {
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  z-index: 2;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.a-radio-button:hover .actual-radio {
+  border-color: var(--primary-hover-color);
+}
+
+.a-radio-button.is-disabled {
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.a-radio-button.is-disabled .actual-radio {
+  border-color:var(--disabled-color);
+}
+
+.a-radio-button input[type=radio] {
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  top: -1px;
+  left: -1px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.a-radio-button .radio-label {
+  display: inline-block;
+  padding: 5px 0 5px 30px;
+  cursor: pointer;
+}
+
+.a-radio-button.is-disabled .radio-label {
+  color: var(--disabled-color);
+}
+

@@ -1,0 +1,18 @@
+@import '../../general.css';
+
+.c-header-with-login .header-wrapper {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c-header-with-login .logo-part .a-logo {
+  margin-right: 10px;
+}
+
+.c-header-with-login button + button {
+  margin-left: 10px;
+}

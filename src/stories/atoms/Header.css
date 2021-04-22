@@ -1,0 +1,32 @@
+.a-header-1 {
+  display: inline-block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--header-color);
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0;
+}
+
+.a-header-2 {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--header-color);
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0;
+}
+
+.a-header-3 {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--header-color);
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--border-color);
+  margin: 0;
+}
