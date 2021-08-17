@@ -1,0 +1,7 @@
+.label, .input {
+  cursor: pointer;
+}
+
+.label.disabled, .input:disabled {
+  pointer-events: none;
+}
