@@ -11,7 +11,7 @@ To start the server and access the GUI, run:
 
 The app can then be found at http://localhost:6006.
 
-## Chages made
+## Changes made
 
 * Folder structure, to conform to Atomic Design.
 * Added atoms: Logo, RadioButton, Header.
