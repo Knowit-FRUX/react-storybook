@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Logo } from '../atoms/Logo';
-import { Button } from '../atoms/Button';
+import Logo from '../../atoms/Logo';
+import Button from '../../atoms/Button';
+import Header from '../../atoms/Header';
 import './HeaderWithLogin.css';
-import { Header } from '../atoms/Header';
 
-export const HeaderWithLogin = ({ user, onLogin, onLogout, onCreateAccount }) => (
+const HeaderWithLogin = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <header className="c-header-with-login">
     <div className="header-wrapper">
       <div className="logo-part">
@@ -25,6 +25,8 @@ export const HeaderWithLogin = ({ user, onLogin, onLogout, onCreateAccount }) =>
     </div>
   </header>
 );
+
+export default HeaderWithLogin;
 
 HeaderWithLogin.propTypes = {
   user: PropTypes.shape({}),

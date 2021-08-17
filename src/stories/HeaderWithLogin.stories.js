@@ -1,9 +1,8 @@
 import React from 'react';
-
-import { HeaderWithLogin } from './HeaderWithLogin';
+import HeaderWithLogin from '../components/molecules/HeaderWithLogin';
 
 export default {
-  title: 'Components/Header with login',
+  title: 'Molecules/Header with login',
   component: HeaderWithLogin,
 };
 

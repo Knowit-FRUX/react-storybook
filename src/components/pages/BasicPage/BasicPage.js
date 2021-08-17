@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import HeaderWithLogin from '../../molecules/HeaderWithLogin';
+import './basicPage.css';
 
-import { HeaderWithLogin } from '../components/HeaderWithLogin';
-import './page.css';
-
-export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
+const BasicPage = ({ user, onLogin, onLogout, onCreateAccount }) => (
   <article>
     <HeaderWithLogin user={user} onLogin={onLogin} onLogout={onLogout} onCreateAccount={onCreateAccount} />
 
@@ -59,13 +58,16 @@ export const Page = ({ user, onLogin, onLogout, onCreateAccount }) => (
     </section>
   </article>
 );
-Page.propTypes = {
+
+export default BasicPage;
+
+BasicPage.propTypes = {
   user: PropTypes.shape({}),
   onLogin: PropTypes.func.isRequired,
   onLogout: PropTypes.func.isRequired,
   onCreateAccount: PropTypes.func.isRequired,
 };
 
-Page.defaultProps = {
+BasicPage.defaultProps = {
   user: null,
 };
