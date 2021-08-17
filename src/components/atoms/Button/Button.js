@@ -5,7 +5,7 @@ import './button.css';
 /**
  * Primary button
  */
-export const Button = ({ primary, size, label, isDisabled, onClick }) => {
+const Button = ({ primary, size, label, isDisabled, onClick }) => {
   const mode = primary ? 'is-primary' : 'is-secondary';
   const disabledState = isDisabled ? 'is-disabled' : '';
   return (
@@ -18,6 +18,8 @@ export const Button = ({ primary, size, label, isDisabled, onClick }) => {
     </button>
   );
 };
+
+export default Button;
 
 Button.propTypes = {
   primary: PropTypes.bool.isRequired,

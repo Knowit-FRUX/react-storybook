@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { RadioButton } from '../atoms/RadioButton';
+import RadioButton from '../../atoms/RadioButton';
 import './RadioButtons.css';
 
-export const RadioButtons = ({ label, radios, onChange, isDisabled }) => {
+const RadioButtons = ({ label, radios, onChange, isDisabled }) => {
   const radioButtons = [];
 
   for (const [index, value] of radios.entries()) {
@@ -18,6 +18,8 @@ export const RadioButtons = ({ label, radios, onChange, isDisabled }) => {
     </fieldset>
   )
 };
+
+export default RadioButtons;
 
 RadioButtons.propTypes = {
   label: PropTypes.string.isRequired,

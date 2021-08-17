@@ -6,7 +6,7 @@ import './RadioButton.css';
  * Radio button
  */
 
- export const RadioButton = ({ label, groupName, value, isDisabled, isChecked, onChange}) => (
+ const RadioButton = ({ label, groupName, value, isDisabled, isChecked, onChange}) => (
   <div className={`a-radio-button ${isDisabled ? 'is-disabled' : ''}`} >
     <span className="actual-radio">
       <input 
@@ -22,6 +22,7 @@ import './RadioButton.css';
   </div>
 );
 
+export default RadioButton;
 
 RadioButton.propTypes = {
   label: PropTypes.string.isRequired,

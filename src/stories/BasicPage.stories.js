@@ -1,13 +1,13 @@
 import React from 'react';
-import { Page } from './Page';
-import * as HeaderWithLoginStories from '../components/HeaderWithLogin.stories';
+import BasicPage from '../components/pages/BasicPage';
+import * as HeaderWithLoginStories from './HeaderWithLogin.stories';
 
 export default {
-  title: 'Pages/Page',
-  component: Page,
+  title: 'Pages/BasicPage',
+  component: BasicPage,
 };
 
-const Template = (args) => <Page {...args} />;
+const Template = (args) => <BasicPage {...args} />;
 
 export const LoggedIn = Template.bind({});
 LoggedIn.args = {
